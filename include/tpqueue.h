@@ -71,7 +71,7 @@ return count == size;
 
 // функция добавления элемента в очередь
 template<typename T>
-void TQueue<T>::push(const T & item)
+void TPQueue<T>::push(const T & item)
 {
 // проверяем, ести ли свободное место в очереди
 assert( count < size );

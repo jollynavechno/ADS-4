@@ -5,15 +5,15 @@
 
 template<typename T>
 class TPQueue {
-public:
-TPQueue(int =100);          // конструктор по умолчанию
+ public:
+TPQueue(int = 100);          // конструктор по умолчанию
 ~TPQueue();                 // деструктор
 void push(const T &); // добавить элемент в очередь
 T pop();              // удалить элемент из очереди
 T get() const;        // прочитать первый элемент
 bool isEmpty() const;      // пустая ли очередь?
 bool isFull() const;       // заполнен ли массив?
-private:
+ private:
 T* arr;          // массив с данными
 int size;
 int begin,       // начало очереди
@@ -71,10 +71,9 @@ return count == size;
 
 // функция добавления элемента в очередь
 template<typename T>
-void TPQueue<T>::push(const T & item)
-{
+void TPQueue<T>::push(const T & item) {
 // проверяем, ести ли свободное место в очереди
-assert( count < size );
+assert(count < size);
 int i = end;
 if (count) {
 while (i >= 1 && arr[i - 1].prior < item.prior) {

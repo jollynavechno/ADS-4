@@ -6,8 +6,8 @@
 template<typename T>
 class TPQueue {
 public:
-TQueue(int =100);          // конструктор по умолчанию
-~TQueue();                 // деструктор
+TPQueue(int =100);          // конструктор по умолчанию
+~TPQueue();                 // деструктор
 void push(const T &); // добавить элемент в очередь
 T pop();              // удалить элемент из очереди
 T get() const;        // прочитать первый элемент
